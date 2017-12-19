@@ -1,0 +1,119 @@
+html, body {
+  width: 100%;
+}
+
+body {
+  background-image: url(office-bkgd.jpg);
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  font-weight: 700;
+}
+
+th, td {
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+}
+
+header {
+  padding: 30px;
+}
+
+.table-container {
+  padding: 40px;
+  margin: 50px 100px;
+  background-color: rgba(255,255,255,0.25);
+}
+
+.employee-form {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.employee-form > * + * {
+  margin-left: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #ffffff;
+  font-size: 15px;
+}
+
+.submit-button {
+  margin: 20px 0;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  margin: 10px 0;
+  font-size: 10px;
+  background-color: #d9534f;
+  color: #ffffff;
+}
+
+.annual-salary:before {
+  content: "$";
+}
+
+.annual-total:before,
+.monthly-total:before,
+.average-total:before {
+  content: "$";
+}
